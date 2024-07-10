@@ -97,7 +97,7 @@ function notation(n) {
 
 notation(3)
 
-// *Big O Notation : O(n^3 +n^3 + n + 1) -> O(n^3) -> cubico
+// *Big O Notation : O(n^3 + n^3 + n + 1) -> O(n^3) -> cubico
 // *                 O(2 n^3 + n + 1)
 
 //* Eliminamos constantes
@@ -105,3 +105,17 @@ notation(3)
 
 //* Eliminamos no dominantes
 // *                 O(n^3) -> cubico
+
+function notation2(m, n) {
+  for (let i = 0; i < m; i++) {
+    console.log(i)
+  }
+
+  for (let j = 0; j < n; j++) {
+    console.log(j)
+  }
+};
+
+notation2(5 ,7); // 12 procesos
+//* Big O Notation : O(n + m)
+//* Different terms -> términos diferentes
