@@ -95,7 +95,8 @@ ht = {
 
 
 /* 
-Tarea:
+* Tarea:
+
 * Realizar un metodo printTable que imprima en consola 
   * 1: [['harina', 100], ['queso', 76]]
   * 2: [[['jamon', 78]]]
