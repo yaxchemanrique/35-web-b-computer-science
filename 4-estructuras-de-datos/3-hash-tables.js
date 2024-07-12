@@ -26,15 +26,14 @@ class HashTable {
   get(key) {
     let index = this.hash(key);
     if(this.dataMap[index]) {
-      for(let i = 0; i < this.dataMap[index]; i++) {
+      for(let i = 0; i < this.dataMap[index].length; i++) {
         if(this.dataMap[index][i][0] === key) {
+          // console.log(this.dataMap[index][i][1])
           return this.dataMap[index][i][1];
         }
       }
-    } else {
-      return undefined
-    }
-    
+    } 
+    return undefined;
   }
 }
 
@@ -63,6 +62,10 @@ ht.set('queso', 76)
 ht.set('huevo', 75)
 ht.set('shampoo', 32)
 ht.set('jamon', 78)
+
+ht.get('shampoo')
+// debugger
+ht.get('queso')
 /* 
 
 new Array -> []
