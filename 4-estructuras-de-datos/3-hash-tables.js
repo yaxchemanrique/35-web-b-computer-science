@@ -92,3 +92,13 @@ ht = {
 }
 
 */
+
+
+/* 
+Tarea:
+* Realizar un metodo printTable que imprima en consola 
+  * 1: [['harina', 100], ['queso', 76]]
+  * 2: [[['jamon', 78]]]
+* Realizar un método keys() que imprima en consola todas las llaves que existen en la HT
+  * harina, queso, jamon, huevo, shampoo
+*/
