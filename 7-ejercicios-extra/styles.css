@@ -1,0 +1,8 @@
+.student-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.student-row:nth-of-type(even) {
+  background-color: hsl(0, 0%, 86%);
+}

@@ -3,10 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./ejercicio-1.js" defer></script>
+  <!-- <script src="./ejercicio-1.js" defer></script> -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="./ejercicio-2.js" defer></script>
   <title>Document</title>
 </head>
 <body>
-  
+  <form style="display: flex; flex-direction: column; gap: 1rem;">
+    <div class="input-group">
+      <label for="name">Nombre:</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div class="input-group">
+      <label for="last-name">Apellido:</label>
+      <input type="text" name="last-name" id="last-name">
+    </div>
+    <div class="input-group">
+      <label for="age">Edad:</label>
+      <input type="number" name="age" id="age">
+    </div>
+    <button type="submit" id="save-btn">Guardar</button>
+  </form>
+
+  <div id="students-table"></div>
 </body>
 </html>
+
+<!-- Section: Un aseccion de su pagina -->
