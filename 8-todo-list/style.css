@@ -1,0 +1,23 @@
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grupo-nueva-tarea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}

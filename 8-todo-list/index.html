@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+  <title>To-Do list</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>To-Do List</h1>
+    <form>
+      <div class="grupo-nueva-tarea">
+        <label for="tarea">Escribe una nueva tarea</label>
+        <div>
+          <input type="text" name="tarea" id="tarea">
+          <button type="submit" id="agregar-tarea">agregar</button>
+        </div>
+      </div>
+      <div class="grupo-de-etiquetas">
+        <input type="radio" name="estatus" id="incompleto" value="incompleto" checked>
+        <label for="incompleto">incompletas</label>
+        <input type="radio" name="estatus" id="completo" value="completo">
+        <label for="completo">completas</label>
+      </div>
+      <div class="grupo-de-etiquetas">
+        <input type="radio" name="area" id="escuela" value="escuela">
+        <label for="escuela">escuela</label>
+        <input type="radio" name="area" id="trabajo" value="trabajo">
+        <label for="trabajo">trabajo</label>
+        <input type="radio" name="area" id="personal" value="personal">
+        <label for="personal">personal</label>
+      </div>
+      <div class="grupo-de-etiquetas">
+        <input type="radio" name="prioridad" id="urgente" value="urgente">
+        <label for="urgente">urgente</label>
+        <input type="radio" name="prioridad" id="no-urgente" value="no-urgente">
+        <label for="no-urgente">no urgente</label>
+      </div>
+    </form>
+    <div class="contenedor-tareas-incompletas">
+      <h2>Tareas Incompletas</h2>
+      <div class="tareas-incompletas">
+        <div class="tarea">
+          <input type="checkbox" name="tarea-1" id="tarea-1">
+          <label for="tarea-1">Sacar a pasear al perro</label>
+          <button>eliminar</button>
+        </div>
+        <div class="tarea">
+          <input type="checkbox" name="tarea-2" id="tarea-2">
+          <label for="tarea-2">tarea 2</label>
+          <button>eliminar</button>
+        </div>
+        <div class="tarea">
+          <input type="checkbox" name="tarea-3" id="tarea-3">
+          <label for="tarea-3">tarea 3</label>
+          <button>eliminar</button>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor-tareas-completas">
+      <h2>Tareas Completas</h2>
+      <div class="tareas-completas">
+        <div class="tarea">
+          <input type="checkbox" name="tarea-4" id="tarea-4">
+          <label for="tarea-4">tarea 4</label>
+          <button>eliminar</button>
+        </div>
+        <div class="tarea">
+          <input type="checkbox" name="tarea-5" id="tarea-5">
+          <label for="tarea-5">tarea 5</label>
+          <button>eliminar</button>
+        </div>
+        <div class="tarea">
+          <input type="checkbox" name="tarea-6" id="tarea-6">
+          <label for="tarea-6">tarea 6</label>
+          <button>eliminar</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
